@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image</title>
         <link rel="stylesheet" href="styles.css">
         <style>
             #submit-buttons {
@@ -20,20 +20,18 @@
     <body>
         <!--this one is the buttons for moving to another html file-->
         <div class = "button-container">
-            <button type="button" onclick="window.location.href='image.html';">
-                Image Search
-            </button>
-            <button type="button" onclick="window.location.href='advanced.html';">
-                Advanced Search
+            <button type="button" onclick="window.location.href='index.html';">
+                Google Search
             </button>
         </div>
         <!--this one is for the search bar and search action-->
         <div class = "search-container">
             <form class = "search-option" action="https://www.google.com/search">
                 <input class = "search-bar", type="text" name="q">
+                <!-- Hidden input to add tbm=isch to the query -->
+                <input type="hidden" name="tbm" value="isch">
                 <div id = "submit-buttons">
-                    <input type="submit" value="Google Search">
-                    <input type="submit" value="I'm feeling Lucky" name="btnI">
+                    <input type="submit" value="Image Search">
                 </div>
             </form>
         </div>

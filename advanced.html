@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #submit-buttons {
+                position: absolute;
+                top: 400px;
+                left: 12%;
+                transform: translateX(100%);
+                text-align: center;
+                width: auto;
+
+            }
+
+            #submit-buttons input[type="submit"] {
+    background-color: rgb(110, 228, 255); /* Blue background color for the button */
+    color: black; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+            
+        </style>
+    </head>
+    <body>
+        <!--this one is the buttons for moving to another html file-->
+        <div class = "button-container">
+            <button type="button" onclick="window.location.href='index.html';">
+                Google Search
+            </button>
+        </div>
+        <!--this one is for the search bar and search action-->
+        <div class = "search-container">
+            <form class = "search-option2" action="https://www.google.com/search">
+                <label for="all-words">Find pages with... "all these words:"</label>
+                <input id="all-words" type="text" name="as_q" class="search-bar2">
+
+                <label for="exact-word">Find pages with... "this exact word or phrase:"</label>
+                <input id="all-words" type="text" name="as_epq" class="search-bar2">
+
+                <label for="any-words">Find pages with... "any of these words:"</label>
+                <input id="any-words" type="text" name="as_oq" class="search-bar2">
+
+                <label for="none-words">Find pages with... "none of these words:"</label>
+                <input id="none-words" type="text" name="as_eq" class="search-bar2">
+
+                <div id = "submit-buttons">
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
